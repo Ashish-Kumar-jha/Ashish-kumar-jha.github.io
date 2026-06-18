@@ -1,57 +1,39 @@
-/*===== MENU SHOW =====*/ 
-const showMenu = (toggleId, navId) =>{
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
-
-    if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show')
-        })
-    }
-}
-showMenu('nav-toggle','nav-menu')
-
-/*===== ACTIVE AND REMOVE MENU =====*/
-const navLink = document.querySelectorAll('.nav__link');   
-
-function linkAction(){
-  /*Active link*/
-  navLink.forEach(n => n.classList.remove('active'));
-  this.classList.add('active');
-  
-  /*Remove menu mobile*/
-  const navMenu = document.getElementById('nav-menu')
-  navMenu.classList.remove('show')
-}
-navLink.forEach(n => n.addEventListener('click', linkAction));
-
-/*===== SCROLL REVEAL ANIMATION =====*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 2000,
-    reset: true
+/* ── NAVBAR SCROLL SHADOW ── */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
 });
 
-/*SCROLL HOME*/
-sr.reveal('.home__title',{}); 
-sr.reveal('.button',{delay: 200}); 
-sr.reveal('.home__img',{delay: 400}); 
-sr.reveal('.home__social-icon',{ interval: 200}); 
+/* ── SCROLL REVEAL + SKILL BAR ANIMATION ── */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
 
-/*SCROLL ABOUT*/
-sr.reveal('.about__img',{}); 
-sr.reveal('.about__subtitle',{delay: 400}); 
-sr.reveal('.about__text',{delay: 400}); 
+      // Animate skill bars when their section becomes visible
+      const bars = entry.target.querySelectorAll('.skill-fill');
+      bars.forEach(bar => {
+        bar.style.width = bar.dataset.width + '%';
+      });
+    }
+  });
+}, { threshold: 0.12 });
 
-/*SCROLL SKILLS*/
-sr.reveal('.skills__subtitle',{}); 
-sr.reveal('.skills__text',{}); 
-sr.reveal('.skills__data',{interval: 200}); 
-sr.reveal('.skills__img',{delay: 600});
+// Initialise all reveal elements — reset skill bars to 0 first
+document.querySelectorAll('.reveal').forEach(el => {
+  el.querySelectorAll('.skill-fill').forEach(bar => {
+    bar.style.width = '0';
+  });
+  observer.observe(el);
+});
 
-/*SCROLL WORK*/
-sr.reveal('.work__img',{interval: 200}); 
-
-/*SCROLL CONTACT*/
-sr.reveal('.contact__input',{interval: 200}); 
+/* ── SMOOTH SCROLL FOR NAV LINKS ── */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', e => {
+    const target = document.querySelector(anchor.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
