@@ -1,283 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ashish Kumar Jha — Software Engineer II</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/styles.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <title></title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Ashish Kumar Jha</a>
+                </div>
 
-  <!-- Your Stylesheet -->
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-  <!-- ===== NAV ===== -->
-  <nav class="nav" id="navbar">
-    <a href="#home" class="nav__logo">Ashish<span>.</span></a>
-    <ul class="nav__links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-  <main>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Ashish Kr. Jha</span><br> Software Engineer II </h1>
+                    
+                    <a href="https://drive.google.com/file/d/19B5Kx9ZoZvJ_L9-2uyR3MdoxqePZwVwB/view?usp=sharing" class="button">Get CV</a>
+                </div>
+            
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/ashish-kumar-jha-581a4314b/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.hackerrank.com/aj310161" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="https://github.com/Ashish-Kumar-jha" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="home">
-      <div class="hero__text reveal">
-        <p class="hero__eyebrow">Software Engineer II</p>
-        <h1 class="hero__name">Ashish Kumar<br>Jha</h1>
-        <p class="hero__title">Backend · Microservices · Distributed Systems</p>
-        <div class="hero__divider"></div>
-        <p class="hero__bio">Over 5 years building robust, scalable backend systems. Specialising in microservices architecture, high-level design, and modern Java ecosystems.</p>
-        <div class="hero__actions">
-          <a href="https://drive.google.com/file/d/19B5Kx9ZoZvJ_L9-2uyR3MdoxqePZwVwB/view?usp=sharing" class="btn-primary" target="_blank">Download CV</a>
-          <a href="#contact" class="btn-outline">Get in Touch</a>
-        </div>
-      </div>
+                <div class="home__img">    
+                    <img src="assets/img/ChatGPT Image May 20, 2026, 10_42_53 AM.png" alt="">
+                </div>
+            </section>
 
-      <div class="hero__image-wrap reveal">
-        <div class="hero__img-frame">
-          <img src="assets/img/ChatGPT Image May 20, 2026, 10_42_53 AM.png" alt="Ashish Kumar Jha">
-        </div>
-      </div>
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
 
-      <div class="hero__social">
-        <a href="https://www.linkedin.com/in/ashish-kumar-jha-581a4314b/" target="_blank" aria-label="LinkedIn">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/Ashish-Kumar-jha" target="_blank" aria-label="GitHub">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.hackerrank.com/aj310161" target="_blank" aria-label="HackerRank">
-          <i class="fa-brands fa-hackerrank"></i>
-        </a>
-      </div>
-    </section>
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/code.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Ashish</h2>
+                        <p class="about__text">
+    With over 5+ years of experience as a software engineer, I specialize in backend development, particularly in microservices architecture. I've contributed to building robust systems, leveraging modern technologies to deliver efficient solutions.
+</p>
 
-    <!-- ===== ABOUT ===== -->
-    <section class="about" id="about">
-      <div class="about__img-wrap reveal">
-        <div class="about__img-bg"></div>
-        <img src="assets/img/code.png" alt="Code illustration">
-      </div>
-      <div class="reveal">
-        <p class="section-label">About Me</p>
-        <h2 class="section-title">Crafting <span>scalable</span> systems<br>that endure</h2>
-        <p class="about__text">With over 5 years of experience as a software engineer, I specialise in backend development, particularly in microservices architecture. I have contributed to building robust, high-throughput systems, leveraging modern technologies to deliver efficient and maintainable solutions.</p>
-        <p class="about__text">I bring a deep understanding of distributed systems, event-driven architecture, and database design — always with performance and reliability as first principles.</p>
-        <div class="about__tags">
-          <span class="tag">Microservices</span>
-          <span class="tag">High-Level Design</span>
-          <span class="tag">Java 8</span>
-          <span class="tag">Spring Boot</span>
-          <span class="tag">Kafka</span>
-          <span class="tag">MongoDB</span>
-          <span class="tag">SQL</span>
-          <span class="tag">Docker</span>
-          <span class="tag">Git</span>
-        </div>
-      </div>
-    </section>
+<p class="about__text">
+    <strong>Skills:</strong><br>
+    - Microservices<br>
+    - HLD<br>
+    - Java 8<br>
+    - Spring Boot<br>
+    - Git<br>
+    - MongoDB<br>
+    - SQL<br>
+    - Kafka<br>
+    - Docker Basics
+</p>
 
-    <!-- ===== SKILLS ===== -->
-    <section class="skills" id="skills">
-      <div class="reveal text-center">
-        <p class="section-label text-center">Expertise</p>
-        <h2 class="section-title text-center">Professional <span>Skills</span></h2>
-      </div>
-      <div class="skills__grid">
-        <div class="reveal">
-          <div class="skill-item">
-            <div class="skill-head"><span>Java</span><span class="skill-pct">90%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-head"><span>Microservices</span><span class="skill-pct">80%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-head"><span>Spring Boot</span><span class="skill-pct">75%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-head"><span>SQL</span><span class="skill-pct">80%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-head"><span>Kafka</span><span class="skill-pct">70%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="70"></div></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-head"><span>High-Level Design</span><span class="skill-pct">70%</span></div>
-            <div class="skill-track"><div class="skill-fill" data-width="70"></div></div>
-          </div>
-        </div>
+         
+                    </div>                                   
+                </div>
+            </section>
 
-        <div class="skills__img-card reveal">
-          <div class="skills__card-title">5+ Years<br>of Engineering</div>
-          <p class="skills__card-text">Building production-grade backend systems across financial, SaaS, and enterprise domains — delivering solutions that scale with confidence.</p>
-          <div class="skills__stat">
-            <div>
-              <div class="skills__stat-num">5+</div>
-              <div class="skills__stat-label">Years exp.</div>
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                    
+                        <div class="skills__data">
+                            <div class="skills__names">
+                              
+                                <span class="skills__name">Java</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                               
+                                <span class="skills__name">MICROSERVICES</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+
+                                <span class="skills__name">SPRING BOOT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                
+                                <span class="skills__name">SQL</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                
+                                <span class="skills__name">KAFKA</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                
+                                <span class="skills__name">HLD</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Projects</h2>
+                <center>
+                <div class="work__container bd-grid">
+                    
+                    <div class="work__img">
+                        <a href="https://github.com/Ashish-Kumar-jha/Peer-Tutoring">
+                       <center> <img src="assets/img/download.png" alt=""></center>
+                        <center>Peer Tutoring</center>
+                        </a>
+                    </div>
+                    
+                      <div class="work__img">
+                        <a href="https://github.com/Ashish-Kumar-jha/Calculator-Using-Java-Swing">
+                         <center><img src="assets/img/cal.PNG" alt=""></center>
+                          <center>Calculator Java
+                          </center>
+                        </a>
+                    </div>
+
+                    <div class="work__img">
+                        <a href="https://github.com/Ashish-Kumar-jha/API-SpringBoot-Postman">
+                         <center><img src="assets/img/api.PNG" alt=""></center>
+                          <center>Registration Api
+                          </center>
+                        </a>
+                    </div>
+
+                </div>
+                </center>
+            </section>
+            
+            
+            
+            <section class="work section" id="work">
+                <h2 class="section-title">Certifications</h2>
+
+                <div class="work__container bd-grid">
+
+                    <div class="work__img">
+                        <img src="assets/img/OpseraEmployee.png" alt="">
+
+                        </a>
+                    </div>
+                    <div class="work__img">
+                        <a href="https://drive.google.com/file/d/1zLErgmzdP5JKmQ7qol226JnCrWufap7s/view?usp=sharing">
+                        <img src="assets/img/jhr.png" alt="">
+
+                        </a>
+                    </div>
+                    <div class="work__img">
+                        <a href="https://drive.google.com/file/d/11EBFpDYwB94oV_KejUAO67PPMlhk2-m-/view?usp=sharing">
+                        <img src="assets/img/gfg.jpg" alt="">
+
+                        </a>
+                    </div>
+                    <div class="work__img">
+                        <a href="https://drive.google.com/file/d/1EFAo5ISiPwQsw8zbFCF3P1SHpvRJTd50/view?usp=sharing">
+                        <img src="assets/img/sql.jpg" alt="">
+            
+                        </a>
+                    </div>
+
+                    <div class="work__img">
+                        <a href="https://drive.google.com/file/d/1Me5LY2kyDH9EkdrMPBE9_6TarkrMbc8_/view?usp=sharing">
+                        <img src="assets/img/cogpy.jpg" alt="">
+
+                        </a>
+                    </div>
+                    <div class="work__img">
+                        <a href="https://drive.google.com/file/d/1w8aFz_jRFg1YzJ7FvMRqCaxUFOlKpJ_V/view?usp=sharing">
+                        <img src="assets/img/ibm.jpg" alt="">
+
+                        </a>
+                    </div>
+                    <div class="work__img">
+                        <a href="https://drive.google.com/file/d/16BpHY3cFsn34DeU0TMhKl8i2s7VLpucL/view?usp=sharing">
+                        <img src="assets/img/internshala.jpg" alt="">
+            
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enter" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Ashish</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/profile.php?id=100004983823564" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/ashish_keshav_jha/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
             </div>
-            <div>
-              <div class="skills__stat-num">3</div>
-              <div class="skills__stat-label">Open source</div>
-            </div>
-            <div>
-              <div class="skills__stat-num">7+</div>
-              <div class="skills__stat-label">Certifications</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <p>&#169; 2026 copyright all right reserved</p>
+        </footer>
+   
 
-    <!-- ===== PROJECTS ===== -->
-    <section class="projects" id="projects">
-      <div class="reveal">
-        <p class="section-label">Selected Work</p>
-        <h2 class="section-title">Recent <span>Projects</span></h2>
-      </div>
-      <div class="projects__grid">
-        <a href="https://github.com/Ashish-Kumar-jha/Peer-Tutoring" class="project-card reveal" target="_blank">
-          <div class="project-card__img">
-            <img src="assets/img/download.png" alt="Peer Tutoring">
-          </div>
-          <div class="project-card__body">
-            <p class="project-card__label">Web App</p>
-            <h3 class="project-card__title">Peer Tutoring Platform</h3>
-            <span class="project-card__link">View on GitHub <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </a>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-        <a href="https://github.com/Ashish-Kumar-jha/Calculator-Using-Java-Swing" class="project-card reveal" target="_blank">
-          <div class="project-card__img">
-            <img src="assets/img/cal.PNG" alt="Calculator Java">
-          </div>
-          <div class="project-card__body">
-            <p class="project-card__label">Java · Swing</p>
-            <h3 class="project-card__title">Calculator Application</h3>
-            <span class="project-card__link">View on GitHub <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </a>
-
-        <a href="https://github.com/Ashish-Kumar-jha/API-SpringBoot-Postman" class="project-card reveal" target="_blank">
-          <div class="project-card__img">
-            <img src="assets/img/api.PNG" alt="Registration API">
-          </div>
-          <div class="project-card__body">
-            <p class="project-card__label">Spring Boot · REST</p>
-            <h3 class="project-card__title">Registration API</h3>
-            <span class="project-card__link">View on GitHub <i class="fa-solid fa-arrow-right"></i></span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- ===== CERTIFICATIONS ===== -->
-    <section class="certs" id="certs">
-      <div class="reveal text-center">
-        <p class="section-label text-center" style="color: rgba(201,168,76,0.8);">Credentials</p>
-        <h2 class="section-title text-center" style="color: var(--white);">Certifications</h2>
-      </div>
-      <div class="certs__grid">
-        <div class="cert-card reveal">
-          <img src="assets/img/OpseraEmployee.png" alt="Opsera Certificate">
-          <div class="cert-overlay"><span class="cert-overlay-text">Opsera Appreciation</span></div>
-        </div>
-        <a href="https://drive.google.com/file/d/1zLErgmzdP5JKmQ7qol226JnCrWufap7s/view?usp=sharing" class="cert-card reveal" target="_blank">
-          <img src="assets/img/jhr.png" alt="HackerRank Certificate">
-          <div class="cert-overlay"><span class="cert-overlay-text">HackerRank · Problem Solving</span></div>
-        </a>
-        <a href="https://drive.google.com/file/d/11EBFpDYwB94oV_KejUAO67PPMlhk2-m-/view?usp=sharing" class="cert-card reveal" target="_blank">
-          <img src="assets/img/gfg.jpg" alt="GeeksForGeeks Certificate">
-          <div class="cert-overlay"><span class="cert-overlay-text">GeeksForGeeks · Java</span></div>
-        </a>
-        <a href="https://drive.google.com/file/d/1EFAo5ISiPwQsw8zbFCF3P1SHpvRJTd50/view?usp=sharing" class="cert-card reveal" target="_blank">
-          <img src="assets/img/sql.jpg" alt="SQL Certificate">
-          <div class="cert-overlay"><span class="cert-overlay-text">SQL &amp; Databases</span></div>
-        </a>
-        <a href="https://drive.google.com/file/d/1Me5LY2kyDH9EkdrMPBE9_6TarkrMbc8_/view?usp=sharing" class="cert-card reveal" target="_blank">
-          <img src="assets/img/cogpy.jpg" alt="Python Certificate">
-          <div class="cert-overlay"><span class="cert-overlay-text">Python 101 · Cognitive Class</span></div>
-        </a>
-        <a href="https://drive.google.com/file/d/1w8aFz_jRFg1YzJ7FvMRqCaxUFOlKpJ_V/view?usp=sharing" class="cert-card reveal" target="_blank">
-          <img src="assets/img/ibm.jpg" alt="IBM Certificate">
-          <div class="cert-overlay"><span class="cert-overlay-text">IBM · Databases &amp; SQL</span></div>
-        </a>
-        <a href="https://drive.google.com/file/d/16BpHY3cFsn34DeU0TMhKl8i2s7VLpucL/view?usp=sharing" class="cert-card reveal" target="_blank">
-          <img src="assets/img/internshala.jpg" alt="Internshala Certificate">
-          <div class="cert-overlay"><span class="cert-overlay-text">Internshala Training</span></div>
-        </a>
-      </div>
-    </section>
-
-    <!-- ===== CONTACT ===== -->
-    <section class="contact" id="contact">
-      <div class="reveal">
-        <p class="section-label">Get in Touch</p>
-        <h2 class="section-title">Let's <span>Work</span><br>Together</h2>
-        <p class="contact__subtitle">Open to new opportunities, collaborations, and conversations. Reach out and I'll respond promptly.</p>
-        <div class="contact__detail">
-          <i class="fa-brands fa-linkedin-in"></i>
-          <a href="https://www.linkedin.com/in/ashish-kumar-jha-581a4314b/" target="_blank">linkedin.com/in/ashish-kumar-jha</a>
-        </div>
-        <div class="contact__detail">
-          <i class="fa-brands fa-github"></i>
-          <a href="https://github.com/Ashish-Kumar-jha" target="_blank">github.com/Ashish-Kumar-jha</a>
-        </div>
-      </div>
-      <form class="contact__form reveal">
-        <div class="form-group">
-          <label class="form-label">Name</label>
-          <input type="text" class="form-input" placeholder="Your name">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Email</label>
-          <input type="email" class="form-input" placeholder="your@email.com">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Message</label>
-          <textarea class="form-textarea" placeholder="Tell me about your project or opportunity…"></textarea>
-        </div>
-        <button type="button" class="btn-primary">Send Message</button>
-      </form>
-    </section>
-
-  </main>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="footer__brand">Ashish<span>.</span></div>
-    <p class="footer__copy">© 2026 Ashish Kumar Jha · All rights reserved</p>
-    <div class="footer__social">
-      <a href="https://www.facebook.com/profile.php?id=100004983823564" target="_blank" aria-label="Facebook">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com/ashish_keshav_jha/" target="_blank" aria-label="Instagram">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="https://github.com/Ashish-Kumar-jha" target="_blank" aria-label="GitHub">
-        <i class="fa-brands fa-github"></i>
-      </a>
-    </div>
-  </footer>
-
-  <!-- ===== MAIN JS ===== -->
-  <script src="assets/js/main.js"></script>
-
-</body>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
